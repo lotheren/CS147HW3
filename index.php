@@ -8,16 +8,16 @@
 
 <div class="container">
     <div id="sidebar">
-        <p> here we have sign in </p>
+       <?php include 'views/elements/sideBar.php';?>
     </div>
     <div id="header">
          <h1>Image Rating</h1>
     </div>
     <div id="content">
-        content
+                <?php include 'controllers/showImages.php'; ?>
     </div>
     <div id="footer">
-        footer
+        By Mike Bibb
     </div>
 </div>
 <div id="wrapper">
