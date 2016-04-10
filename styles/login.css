@@ -1,0 +1,38 @@
+label {
+    font-weight:bold;
+    width:100px;
+    font-size:14px;
+}
+
+.box {
+    border:#666666 solid 1px;
+}
+
+.body {
+
+    bgcolor: "#FFFFFF";
+
+}
+.form{
+    align: center;
+}
+
+.wrapper {
+
+    width:300px;
+    border: solid 1px #333333;
+    margin:30px;
+    font-size:11px;
+    margin-top:10px;
+
+}
+.title{
+    background-color:#333333;
+    color:#FFFFFF;
+    padding:4px;
+}
+.error{
+    font-size:11px;
+    color:#cc0000;
+    margin-top:10px;
+}
