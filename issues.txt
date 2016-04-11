@@ -13,4 +13,4 @@ Fix  namespaces. I had them added but it broke everything so I took it off until
 
 Fix the MVC of the website.
 
-Last thing would be touch up the site so that it looks nice. 
+Last thing would be touch up the site so that it looks nice.

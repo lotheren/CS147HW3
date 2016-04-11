@@ -19,7 +19,9 @@ session_start();
          <h1>Image Rating</h1>
     </div>
     <div id="content">
+        <div id="center">
                 <?php include 'controllers/showImages.php'; ?>
+        </div>
     </div>
     <div id="footer">
         By Mike Bibb

@@ -25,23 +25,26 @@ $images = glob($dirname . "*.jpeg");
 $raiting = 0;
 $userRaiting = 0;
 
-$print = <<<IMAGE
-	 <table>
-              <tr>
-                <th>Image</th>
-                <th>Raiting</th>
-                <th>User Raiting</th>
-              </tr>    
-IMAGE;
 
 echo $print;
 foreach ($images as $image) {
+$name  = substr($image, 10);
+    $uploader = "unknown";
 
 
+    echo '<table>';
+    echo '<tr>';
+                echo '<th>'.$name.'</th>';
+              echo '</tr>';
     echo '<tr>';
     echo '<td><img src="' . $image . '" width="200" height="200"/></td>';
-    echo '<td>' . $raiting . '</td>';
-    echo '<td> ' . $userRaiting . ' </td>';
+    echo '<tr>';
+    echo '<td>Raiting ' . $raiting . '</td>';
+    echo '<tr>';
+    echo '<td> User Raiting ' . $userRaiting . ' </td>';
+    echo '<tr>';
+    echo '<td> Up loader ' . $uploader . ' </td>';
+    echo '<tr>';
     echo '<td>';
     echo '<form name='.$image.' method="post" action="">';
     if (CheckLogin() == TRUE) {
