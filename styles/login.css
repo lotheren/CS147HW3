@@ -2,6 +2,7 @@ label {
     font-weight:bold;
     width:100px;
     font-size:14px;
+    padding:2%;
 }
 
 .box {
@@ -17,6 +18,7 @@ body {
 }
 form{
     margin-top:10px;
+
 }
 
 .wrapper {

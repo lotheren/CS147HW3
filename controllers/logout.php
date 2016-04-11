@@ -6,7 +6,7 @@
  * Time: 6:27 PM
  */
 
-
-session_destroy(); // Is Used To Destroy All Sessions
+session_start();
+session_destroy();
 
 ?>

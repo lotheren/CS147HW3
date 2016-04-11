@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $dirname = "resources/";
 $images = glob($dirname."*.jpeg");

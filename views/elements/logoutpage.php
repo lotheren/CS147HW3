@@ -1,8 +1,9 @@
 <?php
-session_destroy(); // Is Used To Destroy All Sessions
-
-
-
+session_start();
+session_destroy();
+session_write_close();
+session_regenerate_id(true);
+$_SESSION = array();
 ?>
 
 
