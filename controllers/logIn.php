@@ -1,8 +1,9 @@
 <?php
 session_start();
 define('__ROOT__', "/Applications/MAMP/htdocs/hw3");
-require(__ROOT__ . "/controllers/DBConfig.php");
+require(__ROOT__ . "/controllers/Config.php");
 require(__ROOT__ . "/controllers/CheckLogin.php");
+
 
 
 $mysqli = new mysqli($db);
