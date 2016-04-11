@@ -8,20 +8,21 @@ label {
     border:#666666 solid 1px;
 }
 
-.body {
+body {
 
     bgcolor: "#FFFFFF";
-
+    margin: auto;
+    width: 30%;
+    padding: 20px;
 }
-.form{
-    align: center;
+form{
+    margin-top:10px;
 }
 
 .wrapper {
 
     width:300px;
     border: solid 1px #333333;
-    margin:30px;
     font-size:11px;
     margin-top:10px;
 
