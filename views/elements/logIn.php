@@ -1,5 +1,5 @@
 <?php
-include("../controllers/DBConfig.php");
+include("..../controllers/DBConfig.php");
 session_start();
 
 $mysqli = new mysqli($db);
@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <head>
     <title>Login Page</title>
-    <link rel="stylesheet" type="text/css" href="../styles/login.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/login.css">
 
 
 </head>
