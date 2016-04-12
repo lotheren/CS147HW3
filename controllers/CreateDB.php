@@ -15,7 +15,7 @@ if ($db->query($sql) === TRUE) {
     echo "Error creating database: " . $db->error;
 }
 
-// create table
+// create tables
 
 $sql = "CREATE TABLE users (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -36,6 +36,20 @@ imagename VARCHAR(30) NOT NULL,
 user VARCHAR(30) NOT NULL,
 raiting int(6) NOT NULL,
 reg_date TIMESTAMP
+)";
+
+if ($db->query($sql) === TRUE) {
+    echo "Table images created successfully";
+} else {
+    echo "Error creating table: " . $db->error;
+}
+
+$sql = "CREATE TABLE userimages (
+id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+imagename VARCHAR(30) NOT NULL,
+user VARCHAR(30) NOT NULL,
+date TIMESTAMP NOT NULL,
+caption	varchar(40)
 )";
 
 if ($db->query($sql) === TRUE) {
