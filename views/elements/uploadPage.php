@@ -58,7 +58,7 @@ if(isset($_FILES['image'])){
         <?php include 'sideBar.php';?>
     </div>
     <div id="header">
-        <h1>Image Rating</h1>
+        <h1><img src="../../logo.jpg" width="100px" height="100px"/> Image Rating  <img src="../../logo.jpg" width="100px" height="100px"/></h1>
     </div>
     <div id="content">
         <div id="center">

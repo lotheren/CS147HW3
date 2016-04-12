@@ -30,6 +30,7 @@ foreach ($images as $image) {
     $uploader = "unknown";
     $dateAdded = 0;
     $numOfVotes = 0;
+    $caption = "";
 
     $name = substr($image, 10);
     $uploader = "unknown";
@@ -59,6 +60,11 @@ foreach ($images as $image) {
     while($row = $result->fetch_assoc()) {
         $dateAdded = $row["date"];
     }
+    $sql = "SELECT caption FROM userimage WHERE imagename = '$name'";
+    $result = mysqli_query($db, $sql);
+    while($row = $result->fetch_assoc()) {
+        $caption = $row["caption"];
+    }
 
     echo '<table>';
     echo '<tr>';
@@ -67,13 +73,15 @@ foreach ($images as $image) {
     echo '<tr>';
     echo '<td><img src="' . $image . '" width="500px" height="500px"/></td>';
     echo '<tr>';
-    echo '<td>Rating ' . $rating . '</td>';
+    echo '<td>Caption: ' . $caption . '</td>';
     echo '<tr>';
-    echo '<td> User Rating ' . $userRating . ' </td>';
+    echo '<td>Rating: ' . $rating . '</td>';
     echo '<tr>';
-    echo '<td> Up loader ' . $uploader . ' </td>';
+    echo '<td> User Rating: ' . $userRating . ' </td>';
     echo '<tr>';
-    echo '<td> Date Added ' . $dateAdded . ' </td>';
+    echo '<td> Uploader: ' . $uploader . ' </td>';
+    echo '<tr>';
+    echo '<td> Date Added: ' . $dateAdded . ' </td>';
     echo '<tr>';
     echo '<tr>';
     echo '<tr>';

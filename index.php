@@ -6,7 +6,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-        <title>Top Images</title>
+        <title>Top Images </title>
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="styles/site.css">
     </head>
@@ -16,7 +16,9 @@ session_start();
        <?php include 'views/elements/sideBar.php';?>
     </div>
     <div id="header">
-         <h1>Image Rating</h1>
+
+         <h1><img src="logo.jpg" width="100px" height="100px"/> Image Rating  <img src="logo.jpg" width="100px" height="100px"/></h1>
+
     </div>
     <div id="content">
         <div id="center">

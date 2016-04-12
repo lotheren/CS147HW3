@@ -20,7 +20,7 @@ $_SESSION = array();
         <?php include 'sideBar.php';?>
     </div>
     <div id="header">
-        <h1>Image Rating</h1>
+        <h1><img src="../../logo.jpg" width="100px" height="100px"/> Image Rating  <img src="../../logo.jpg" width="100px" height="100px"/></h1>
     </div>
     <div id="content">
         <p>You have been logged out. Please hit the home button to go to the main page. </p>
